@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Menejer Teman</string>
+    <string name="app_name_2">Menejer Teman</string>
+    <string name="version">Version 7.0</string>
+    <string name="assignment">AKB</string>
+    <string name="title_profile">Profil</string>
+    <string name="title_contact">Kontak</string>
+    <string name="title_friends">Teman</string>
+    <string name="title_about">About</string>
+    <string name="title_friend_detail">Detail Teman</string>
+    <string name="_title_add_friend">Tambah Teman</string>
+    <string name="application">Tentang Aplikasi</string>
+    <string name="creator">Author</string>
+    <string name="my_name">Muhammad Qais Abdurrahim</string>
+    <string name="my_nim">10116289</string>
+    <string name="my_class">IF - 7</string>
+    <string name="major">Teknik Informatika</string>
+    <string name="university">Universitas Komputer Indonesia</string>
+    <string name="my_desc">Selamat Datang Di Aplikasi Sederhana ini, Nama Saya Qais, Hobby Saya Tidur</string>
+    <string name="phone">No. Telp</string>
+    <string name="email">Email</string>
+    <string name="instagram">Instagram</string>
+    <string name="twitter">Twitter</string>
+    <string name="my_number">0812-1459-5136</string>
+    <string name="my_email">kocheng@email.unikom.ac.id</string>
+    <string name="my_ig">\@qbitdann</string>
+    <string name="name">Nama</string>
+    <string name="nim">NIM</string>
+    <string name="class_">Kelas</string>
+    <string name="save">Simpan</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Hapus</string>
+    <string name="login">Login</string>
+    <string name="tag_line">Selamat Datang !</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="don_t_have_an_account">Silahkan Daftar Dulu</string>
+    <string name="sign_up">Daftar</string>
+    <string name="edit_friend">Edit Data Teman</string>
+    <string name="login_failed_msg">Login Gagal, Silahkan Periksa Kembali Data Diri Anda</string>
+    <string name="sign_up_failed_msg">Pendaftaran Gagal, Username Sudah Terdaftar Pada System</string>
+    <string name="title_home">Home</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello</string>
+    <string name="sign_out">Keluar</string>
+    <string name="welcome_you_logged_in_as">Hello : </string>
+</resources>

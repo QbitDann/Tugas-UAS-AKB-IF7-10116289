@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tolong.help.fragment.KontakFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarContact"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimaryDark"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            app:popupTheme="@style/AppTheme.AppBarOverlay">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title_contact"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/toolbarText" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgMyAva"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/toolbarContact"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/img001"
+            app:civ_border_color="@color/colorPrimaryDark"
+            app:civ_border_width="3dp" />
+
+        <TextView
+            android:id="@+id/tvMyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbarContact"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@id/imgMyAva"
+            android:text="@string/my_name"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvMyName"
+            android:layout_toEndOf="@id/imgMyAva"
+            android:text="@string/my_nim"
+            android:textAllCaps="true"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgMyAva"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/noTelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark">
+
+                <ImageView
+                    android:id="@+id/imgPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/phone"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingEnd="14dp"
+                    android:paddingBottom="20dp"
+                    android:src="@drawable/ic_phone_android_black_24dp" />
+
+                <TextView
+                    android:id="@+id/textTelp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_toEndOf="@id/imgPhone"
+                    android:text="@string/phone"
+                    android:textColor="@color/colorMuted"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvMyPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textTelp"
+                    android:layout_toEndOf="@id/imgPhone"
+                    android:text="@string/my_number"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lytEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@color/colorPrimaryDark">
+
+                <ImageView
+                    android:id="@+id/imgEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/phone"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingEnd="14dp"
+                    android:paddingBottom="20dp"
+                    android:src="@drawable/ic_mail_outline_black_24dp" />
+
+                <TextView
+                    android:id="@+id/textEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_toEndOf="@id/imgEmail"
+                    android:text="@string/email"
+                    android:textColor="@color/colorMuted"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvMyEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textEmail"
+                    android:layout_toEndOf="@id/imgEmail"
+                    android:text="@string/my_email"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lytIg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@color/colorPrimaryDark">
+
+                <ImageView
+                    android:id="@+id/imgIg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/phone"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingEnd="14dp"
+                    android:paddingBottom="20dp"
+                    android:src="@drawable/ic_instagram"
+                    android:tint="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/textInstagram"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_toEndOf="@id/imgIg"
+                    android:text="@string/instagram"
+                    android:textColor="@color/colorMuted"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvMyIg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textInstagram"
+                    android:layout_toEndOf="@id/imgIg"
+                    android:text="@qbitdann"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lytTwitter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@color/colorPrimaryDark">
+
+                <ImageView
+                    android:id="@+id/imgTwitter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/phone"
+                    android:paddingStart="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingEnd="14dp"
+                    android:paddingBottom="20dp"
+                    android:src="@drawable/ic_twitter" />
+
+                <TextView
+                    android:id="@+id/tvTwitter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_toEndOf="@id/imgTwitter"
+                    android:text="@string/twitter"
+                    android:textColor="@color/colorMuted"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvMyTwitter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvTwitter"
+                    android:layout_toEndOf="@id/imgTwitter"
+                    android:text="@qbitdann"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
